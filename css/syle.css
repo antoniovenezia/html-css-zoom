@@ -4,12 +4,23 @@
     padding: 0;
 }
 
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* CONTAINER */
 .container{
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
+
+
+/* BIG BOX */
 .big-box{
     background-color: black;
     flex-grow: 1;
@@ -20,43 +31,46 @@
 }
 
 .img{
-    height: 70px;
-    /* border: 1px solid black; */
+    width: 160px;
+    height: 80px;
     background-color: lightgrey;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Moto_Gp_logo.svg/1200px-Moto_Gp_logo.svg.png);
-    background-size: 80px;
+    background-size: 60px;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 80px 35px 0px 35px;
     margin: 3px;
-    /* position: relative; */
+    position: relative;
 }
 
-/* .pinco-pallo{
+.pinco-pallo{
     position: absolute;
-    top: 10px;
-} */
+    bottom: 0px;
+    left: 0px;
+    padding: 2px;
+    background-color: rgb(0 0 0 / 24%);
+}
 
 
+
+
+/* END BAR */
 .end-bar{
     height: 70px;
-    background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: hsl(0deg 0% 13%);
 }
 
+
 .item-endbar1{
     color: white;
     width: 200px;
-    /* background-color: aquamarine; */
-    /* border: 1px solid black; */
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
-    padding-right: 40px;
+    padding-left: 10px;
 }
 
 .under-endbar1{
@@ -68,17 +82,21 @@
     flex-direction: column;
 }
 
+
+.fa-share-square{
+    color: #66ff00;
+}
+
 .item-endbar2{
     color: white;
     flex-grow: 1;
-    /* background-color: lightblue; */
-    /* border: 1px solid white; */
     min-width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+
 
 .item-endbar3{
     color: red;
